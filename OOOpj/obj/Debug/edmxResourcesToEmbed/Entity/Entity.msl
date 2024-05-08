@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище OOOpjModelContainer" CdmEntityContainer="OOOpjEntities">
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="OOOpjModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tariff">
+      <EntityTypeMapping TypeName="OOOpjModel.Tariff">
+        <MappingFragment StoreEntitySet="Tariff">
+          <ScalarProperty Name="TariffID" ColumnName="TariffID" />
+          <ScalarProperty Name="TariffName" ColumnName="TariffName" />
+          <ScalarProperty Name="TariffDescription" ColumnName="TariffDescription" />
+          <ScalarProperty Name="TariffPrice" ColumnName="TariffPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="OOOpjModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="TariffID" ColumnName="TariffID" />
+          <ScalarProperty Name="UserPfp" ColumnName="UserPfp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

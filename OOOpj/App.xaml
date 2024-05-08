@@ -1,0 +1,24 @@
+﻿<Application x:Class="OOOpj.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OOOpj"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Name="Labels"  TargetType="Label">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+        </Style>
+
+        <Style x:Name="LogRegTextBoxes" TargetType="TextBox">
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+        </Style>
+
+        <Style x:Name="Buttons" TargetType="Button">
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="Foreground" Value="Orange"/>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Background" Value="Black"/>
+        </Style>
+    </Application.Resources>
+</Application>
